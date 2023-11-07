@@ -1,0 +1,17 @@
+---
+import Icon from 'astro-icon';
+import type { Planet } from '../types';
+interface Props {
+  planet: Planet;
+}
+
+const { planet: { category, name } } = Astro.props;
+---
+<div class="flex gap-2 pb-6 items-center text-gray-200" transition:name="header">
+  <a href="/" class="bg-gray-900 hover:bg-gray-800 mr-4 p-2 text-white rounded-full">
+    <Icon name="mdi:chevron-left" class="h-6 w-6" />
+  </a>
+  <a class="after:content-['-'] after:pl-2 capitalize" href="/">home</a>
+  <span class="after:content-['-'] after:pl-2 capitalize">{ category }</span>
+  <span>{ name }</span>
+</div>

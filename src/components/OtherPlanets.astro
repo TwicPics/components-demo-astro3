@@ -1,0 +1,21 @@
+---
+import { planets } from "../data";
+import type { Planet } from '../types';
+import PlanetCard from "./PlanetCard.astro";
+
+interface Props {
+  planet: Planet;
+}
+
+const { planet: { category, slug } } = Astro.props;
+---
+<h4 class="md:hidden font-bold mb-4 text-lg text-gray-200">Another { category } planet ?</h4>
+<div class="grid grid-cols-3 md:grid-cols-1 gap-4 place-content-between">
+  {
+      planets.filter(
+        _planet => _planet.category === category && _planet.slug !== slug
+      ).map(
+        _planet => <PlanetCard planet={_planet} />
+      )
+  }
+</div>

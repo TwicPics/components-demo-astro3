@@ -1,0 +1,33 @@
+---
+// imports TwicPics style
+import "@twicpics/components/style.css";
+
+// imports Astro ViewTransitions routing component
+import { ViewTransitions } from "astro:transitions";
+---
+
+<script>
+  // install and configurate TwicPics
+  import { installTwicpics } from "@twicpics/components/react";
+  installTwicpics( {
+    domain: "https://demo.twic.pics/", // set your very domain here
+  } );
+</script>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>TwicPics x Astro3</title>
+    <!-- Activate the ViewTransition router for entire site -->
+    <ViewTransitions />
+  </head>
+  <body class="bg-zinc-700">
+    <main class="max-w-6xl mx-auto px-6 py-6 lg:px-10">
+      <slot/>
+    </main>
+  </body>
+</html>

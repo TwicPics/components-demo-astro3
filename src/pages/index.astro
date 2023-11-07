@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import PlanetCard from "../components/PlanetCard.astro";
+import { planets } from "../data";
+---
+
+<Layout>
+  <Header/>
+  <div class="gap-4 grid grid-cols-2 md:grid-cols-4">
+    { planets.map( planet => <PlanetCard {planet} /> ) }
+  </div>
+</Layout>

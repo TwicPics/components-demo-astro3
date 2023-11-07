@@ -1,0 +1,16 @@
+---
+import type { Link } from '../types';
+interface Props {
+  link: Link;
+}
+
+const { link } = Astro.props;
+const { text, url } = link;
+---
+<a
+  class="hover:underline text-sm sm:text-xl text-gray-400 hover:text-gray-100"
+  href={ url }
+  target="_blank"
+>
+  { text }
+</a>

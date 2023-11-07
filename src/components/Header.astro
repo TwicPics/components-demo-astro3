@@ -1,0 +1,37 @@
+---
+import type { Link } from '../types';
+import LinkElement from './LinkElement.astro';
+const links: Link[] = [
+  {
+    url: "http://twicpics.com/blog/using-react-components-within-astro",
+    text: "Blog post"
+  },
+  {
+    url: "https://twicpics-astro.netlify.app/",
+    text: "Other Astro Demo"
+  },
+  {
+    url: "https://github.com/TwicPics/components-demo-astro3/",
+    text: "See on GitHub"
+  }
+]
+---
+<h1 class="flex gap-4 mb-2 text-3xl sm:text-6xl text-white items-center justify-center">
+  <a href="https://www.twicpics.com/">
+    <img
+      class="aspect-{300/58} w-[250px] sm:w-[400px]"
+      src="https://assets.twicpics.com/demo/@twicpics-components/logos/twicpics-by-frontify-on-dark.png"
+      alt="TwicPics logo"
+    />
+  </a>
+  <span>x</span>
+  <a
+    class="bg-gradient-to-r from-[#7B26E6] to-[#CEAEF6] bg-clip-text text-transparent"
+    href="https://astro.build"
+  >
+    Astro
+  </a>
+</h1>
+<nav class="flex gap-4 pb-6 justify-end" transition:name="header">
+  { links.map( link => <LinkElement link= { link }></LinkElement> ) }
+</nav>
