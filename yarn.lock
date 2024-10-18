@@ -1090,10 +1090,10 @@
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
-"@twicpics/components@0.29.2":
-  version "0.29.2"
-  resolved "https://registry.yarnpkg.com/@twicpics/components/-/components-0.29.2.tgz#9e531fa28ab2ac5a42c5719aa25aa82651d9e298"
-  integrity sha512-BzvtOTDW+aylx/gEk9kYdReDlo5rbQhCgMcLly5THZcnvMOM6nuKHOiQl/kmZa/smM3fh3nKaDQjuU19gEI4Nw==
+"@twicpics/components@0.31.0":
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/@twicpics/components/-/components-0.31.0.tgz#de092e6b33383e2594ab0cfc8e5cec00df227a1a"
+  integrity sha512-+XnOixLLcJox1E7vwdVTQjHnSPCSR8l68B+AOt3rvt7966JM+Koc4vJQcJpINfoUtWGtF8ubuV1FY7RqZzFbyQ==
 
 "@types/babel__core@^7.20.5":
   version "7.20.5"
