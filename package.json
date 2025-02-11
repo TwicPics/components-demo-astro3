@@ -14,7 +14,7 @@
 		"@astrojs/react": "4.1.5",
 		"@astrojs/tailwind": "5.1.4",
 		"@iconify-json/mdi": "^1.2.2",
-		"@twicpics/components": "0.31.2",
+		"@twicpics/components": "0.31.3",
 		"@types/react": "18.3.3",
 		"@types/react-dom": "18.3.0",
 		"astro": "5.1.7",
